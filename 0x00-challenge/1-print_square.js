@@ -14,8 +14,8 @@ if (process.argv.length <= 2) {
     process.exit(1)
 }
 
-/* use the default decimal in parsing string to int */
-size = parseInt(process.argv[2])
+/* 2nd arg specifies decimal in parsing string to int */
+size = parseInt(process.argv[2], 10)
 
 for (let i = 0 ; i < size ; i ++) {
     for (let j = 0 ; j < size ; j ++) {
